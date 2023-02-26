@@ -12,43 +12,51 @@
             <h2>custom countdown app</h2>
             <div class="countdown-section">
                 
-                <div class="custom-form-container" id="custom-form-container" hidden>
+                <div class="custom-form-container container" id="custom-form-container">
                     <!-- input -->
                     <form  class="form" id="countdownForm">
                         <label for="title">Title</label>
                         <input type="text" id="title" placeholder="What are you counting down to?">
                         <label for="date-picker">Select a date</label>
                         <input type="date" id="date-picker">
-                        <button type="submit">Submit</button>
+                        <button type="submit" id="countdown-button">Submit</button>
 
                     </form>
                 </div>
-                <div class="countdown-in-progress" id="'countdown-in-progress">
-                    <h2 class="title">Custom Title here</h2>
+                <!-- countdown -->
+                <div class="countdown-in-progress container" id="countdown-in-progress"  hidden >
+                    <h2 class="title" id="countdown-title"></h2>
                     <ul>
 
-                        <li class="flip-card " id="flip-card">
+                        <li class="flip-card day" id="flip-card-day">
                             <div class="top" id="top"><span>14</span></div>
                             <div class="bottom"  id="bottom" ><span>14</span></div>
                             days
                         </li>
                         <li class="flip-card hour" id="flip-card-hour">
-                            <div class="top" id="top"><span>14</span></div>
+                            <div class="top" id="top"><span>15</span></div>
                             <div class="bottom" id="bottom"><span>15</span></div>
+    
                             hrs
                         </li>
-                        <li class="flip-card" id="flip-card">
+                        <li class="flip-card min" id="flip-card-min">
                             <div class="top" id="top"><span>34</span></div>
                             <div class="bottom" id="bottom"><span>34</span></div>
                             mins
                         </li>
-                        <li class="flip-card" id="flip-card">
+                        <li class="flip-card sec" id="flip-card-sec">
                             <div class="top" id="top"><span>50</span></div>
                             <div class="bottom" id="bottom"><span>50</span></div>
                             secs
                         </li>
                     </ul>
-                    <button class="reset-button">reset</button>
+                    <button class="reset-button" id="reset-button">reset</button>
+                </div>
+                <!-- complete -->
+                <div class="complete" id="complete"  hidden >
+                    
+                    <h2 id="complete-info"></h2>
+                    <button id="complete-button">New Countdown</button>
                 </div>
             </div>   
         
