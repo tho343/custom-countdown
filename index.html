@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Countdown</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- -->
+            <h2>custom countdown app</h2>
+            <div class="countdown-section">
+                
+                <div class="custom-form-container" id="custom-form-container" hidden>
+                    <!-- input -->
+                    <form  class="form" id="countdownForm">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" placeholder="What are you counting down to?">
+                        <label for="date-picker">Select a date</label>
+                        <input type="date" id="date-picker">
+                        <button type="submit">Submit</button>
+
+                    </form>
+                </div>
+                <div class="countdown-in-progress" id="'countdown-in-progress">
+                    <h2 class="title">Custom Title here</h2>
+                    <ul>
+
+                        <li class="flip-card " id="flip-card">
+                            <div class="top" id="top"><span>14</span></div>
+                            <div class="bottom"  id="bottom" ><span>14</span></div>
+                            days
+                        </li>
+                        <li class="flip-card hour" id="flip-card-hour">
+                            <div class="top" id="top"><span>14</span></div>
+                            <div class="bottom" id="bottom"><span>15</span></div>
+                            hrs
+                        </li>
+                        <li class="flip-card" id="flip-card">
+                            <div class="top" id="top"><span>34</span></div>
+                            <div class="bottom" id="bottom"><span>34</span></div>
+                            mins
+                        </li>
+                        <li class="flip-card" id="flip-card">
+                            <div class="top" id="top"><span>50</span></div>
+                            <div class="bottom" id="bottom"><span>50</span></div>
+                            secs
+                        </li>
+                    </ul>
+                    <button class="reset-button">reset</button>
+                </div>
+            </div>   
+        
+        
+    
+    <img src="images/pattern-hills.svg" class="background-hill">
+    
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
