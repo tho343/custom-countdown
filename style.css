@@ -144,7 +144,7 @@ li span{
 
 .bottom-flip{
   position: absolute;
-  bottom: 36px;
+  bottom: 37px;
   
   animation: flip-bottom 500ms ease-out 500ms;
   transform-origin: top;
