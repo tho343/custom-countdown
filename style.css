@@ -168,5 +168,8 @@ li span{
   h2{
     font-size: 17px;
   } 
+  .bottom-flip{
+    bottom: 37px;
+  }
   
 }
